@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
@@ -22,6 +21,7 @@ end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'jazz_hands'
 end
 group :test do
   gem 'database_cleaner', '1.0.1'

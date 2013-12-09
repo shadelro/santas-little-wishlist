@@ -1,0 +1,9 @@
+%h3 #{@wish.name}
+%p Name: #{@wish.name}
+%p Description: #{@wish.description}
+= form_for [@wish.user, @wish.wishlist, @wish] do |f|
+  .fields
+    = f.label :bought
+    = f.check_box :bought
+
+  = f.submit

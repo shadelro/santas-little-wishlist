@@ -1,0 +1,6 @@
+= form_for [current_user, @wishlist] do |f|
+  .fields
+    = f.label :name
+    = f.text_field :name
+
+  = f.submit

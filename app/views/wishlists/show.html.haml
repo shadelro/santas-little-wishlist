@@ -1,0 +1,11 @@
+= link_to 'Back', user_path(@wishlist.user)
+%h3 Wishlist
+%p Name: #{@wishlist.name}
+%p
+  User:
+  = link_to @wishlist.user.name, user_path(@wishlist.user)
+%p Wishes:
+= list_of @wishlist.wishes do |wish|
+  = link_to wish.name, user_wishlist_wish_path(current_user.id, wish.wishlist_id, wish.id)
+- if current_user.id == @wishlist.user.id
+  = link_to 'Make a Wish', new_user_wishlist_wish_path(@wishlist.user, @wishlist)

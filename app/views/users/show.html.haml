@@ -1,5 +1,5 @@
+= link_to 'Back', users_path
 %h3 User
-%p
-  User: #{@user.name}
-%p
-  Email: #{@user.email if @user.email}
+%p User: #{@user.name}
+%p Email: #{@user.email if @user.email}
+= link_to 'Wishlists', user_wishlists_path(user_id: @user.id)

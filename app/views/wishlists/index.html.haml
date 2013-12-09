@@ -1,0 +1,6 @@
+%h3 #{@user.name}'s Wishlists
+%ul.wishlists
+  - @wishlists.each do |wishlist|
+    %li= link_to wishlist.name, user_wishlist_path(user_id: @user.id, id: wishlist)
+- if current_user.id == @user.id
+  = link_to 'Create Wishlist', new_user_wishlist_path(@user)

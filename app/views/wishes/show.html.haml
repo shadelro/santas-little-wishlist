@@ -1,0 +1,6 @@
+= link_to 'Back', user_wishlist_path(user_id: @wish.user_id, id: @wish.wishlist_id)
+%p Name: #{@wish.name}
+%p Description: #{@wish.description}
+%p= "Bought: #{@wish.bought ? 'Yes' : 'No'}"
+- unless current_user.id == @wish.user_id || @wish.bought
+  = link_to 'Buy', edit_user_wishlist_wish_path(user_id: @wish.user_id, wishlist_id: @wish.wishlist_id, id: @wish.id)

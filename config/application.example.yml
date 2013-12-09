@@ -8,6 +8,6 @@
 
 # Add application configuration variables here, as shown below.
 #
-ADMIN_NAME: First User
-ADMIN_EMAIL: user@example.com
-ADMIN_PASSWORD: changeme
+ADMIN_NAME: Brent
+ADMIN_EMAIL: rbshadel@gmail.com
+ADMIN_PASSWORD: password
