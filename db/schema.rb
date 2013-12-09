@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20131209222845) do
   create_table "wishes", force: true do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "link"
     t.boolean  "bought"
     t.integer  "wishlist_id"
     t.integer  "user_id"

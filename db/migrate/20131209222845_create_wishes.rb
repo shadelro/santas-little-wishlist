@@ -3,6 +3,7 @@ class CreateWishes < ActiveRecord::Migration
     create_table :wishes do |t|
       t.string :name
       t.string :description
+      t.string :link
       t.boolean :bought
       t.integer :wishlist_id
       t.integer :user_id

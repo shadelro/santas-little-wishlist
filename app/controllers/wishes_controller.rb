@@ -36,7 +36,7 @@ class WishesController < ApplicationController
   private
 
   def wish_params
-    params.require(:wish).permit(:id, :name, :description, :bought)
+    params.require(:wish).permit(:id, :name, :description, :link, :bought)
   end
 
 end
